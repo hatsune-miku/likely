@@ -1,0 +1,37 @@
+{
+  "name": "@a1knla/likely",
+  "version": "1.0.0",
+  "description": "Everyday dev utility functions with loose comparison",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "utility",
+    "comparison",
+    "loose-equality"
+  ],
+  "author": "",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
