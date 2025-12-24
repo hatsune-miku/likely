@@ -1,6 +1,6 @@
 {
   "name": "@a1knla/likely",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Everyday dev utility functions with loose comparison",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

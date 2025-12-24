@@ -1,15 +1,23 @@
 import { eq } from './eq'
+import { truthy } from './truthy'
+import { promise } from './promises'
+import { json } from './json'
+import { writable } from './writable'
+import { email } from './everyday'
+import { link, ipv4, hex } from './everyday'
 
-/**
- * Callable object that provides loose comparison utilities.
- * Calling likely() is equivalent to calling likely.eq()
- */
 function likely(a: any, b: any): boolean {
   return eq(a, b)
 }
 
-// Attach eq as a property to make likely.eq() available
 likely.eq = eq
+likely.truthy = truthy
+likely.promise = promise
+likely.json = json
+likely.writable = writable
+likely.email = email
+likely.link = link
+likely.ipv4 = ipv4
+likely.hex = hex
 
-// Export as named export (not default)
 export { likely }
